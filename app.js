@@ -9,7 +9,7 @@ var app = express();
 app.set('port', config.get('server:port'));
 console.log(app.get('port'));
 
-app.get('/', routes.index);
+app.get('/allPlayers', routes.allPlayers);
 
 app.listen(app.get('port'), function () {
 	console.log('Listening....');
